@@ -47,9 +47,9 @@ export function TrashBox () {
     const promise = remove({id:documentId})
 
     toast.promise(promise,{
-      loading:'Deleting note...',
-      success:'Note deleted!',
-      error:'Failed to delete note'
+      loading:'Not siliniyor...',
+      success:'Not silindi!',
+      error:'Not silme başarısız'
     })
     if (params.documentId  === documentId) {
       router.push('/documents')
@@ -71,11 +71,11 @@ return (
         <Search className="w-4 h-4"/>
         <Input className="h-7 px-2 focus-visible:ring-transparent bg-secondary"
          value={search} onChange={e => setSearch(e.target.value)}
-         placeholder="Filter by page title..."/>
+         placeholder="Sayfa başlığına göre filtrele..."/>
       </div>
       <div className="mt-2 px-1 pb-1">
         <p className="hidden last:block text-xs text-center text-muted-foreground pb-2">
-          No documents found
+          Döküman bulunamadı
         </p>
         {filteredDocuments?.map(document => (
           <div className="text-sm rounded-sm w-full hover:bg-primary/5 flex justify-between items-center text-primary"

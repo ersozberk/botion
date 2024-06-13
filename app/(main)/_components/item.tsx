@@ -43,9 +43,9 @@ export function Item ({id,label,onClick,icon:Icon,active,documentIcon,isSearch,l
     .then(() => router.push('/documents'))
 
     toast.promise(promise,{
-      loading:"Moving to trash...",
-      success:"Note moved to trash!",
-      error:"Failed to archive note"
+      loading:"Çöpe taşı...",
+      success:"Not çöpe taşındı!",
+      error:"Notu çöpe gönderme başarısız"
     })
   }
 
@@ -57,7 +57,7 @@ export function Item ({id,label,onClick,icon:Icon,active,documentIcon,isSearch,l
   const onCreate = (event:React.MouseEvent<HTMLDivElement,MouseEvent>) => {
     event.stopPropagation()
     if (!id) return
-    const promise = create({title:"Untitled",parentDocument:id})
+    const promise = create({title:"Başlıksız",parentDocument:id})
     .then((documentId) => {
       if (!expanded) {
         onExpand?.()
@@ -66,9 +66,9 @@ export function Item ({id,label,onClick,icon:Icon,active,documentIcon,isSearch,l
     })
 
     toast.promise(promise,{
-      loading:'Creating a new note...',
-      success:'New note created!',
-      error:'Failed to create a new note'
+      loading:'Yeni not oluştur...',
+      success:'Yeni not oluşturuldu!',
+      error:'Yeni not oluşturma başarısız.'
     })
   }
 
@@ -113,11 +113,11 @@ return (
             <DropdownMenuContent className="w-60" align="start" side="right" forceMount>
               <DropdownMenuItem onClick={onArchive}>
                 <Trash className="w-4 h-4 mr-2"/>
-                Delete
+                Sil
               </DropdownMenuItem>
               <DropdownMenuSeparator/>
               <div className="text-xs text-muted-foreground p-2">
-                Last edited by: {user?.fullName}
+                Son düzenleyen: {user?.fullName}
               </div>
             </DropdownMenuContent>
           </DropdownMenu>

@@ -41,17 +41,17 @@ return (
     !url && 'h-[12vh]',
     url && 'bg-muted')}>
       {!!url && (
-        <Image className="object-cover" src={url} alt='Cover' fill/>
+        <Image className="object-cover" src={url} alt='Kapak' fill/>
       )}
       {url && !preview && (
         <div className="opacity-0 group-hover:opacity-100 absolute bottom-5 right-5 flex gap-x-2 items-center">
           <Button className="text-muted-foreground text-xs" variant='outline' size='sm' onClick={() => coverIamge.onReplace(url)}>
             <ImageIcon className="w-4 h-4 mr-2"/>
-            Change Cover
+            Kapağı değiştir
           </Button>
             <Button className="text-muted-foreground text-xs" variant='outline' size='sm' onClick={onRemove}>
             <X className="w-4 h-4 mr-2"/>
-            Remove
+            Kaldır
           </Button>
         </div>
       )}

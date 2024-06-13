@@ -44,7 +44,7 @@ export function Toolbar ({initialData,preview}:ToolbarProps) {
     setValue(value)
     update({
       id:initialData._id,
-      title:value || 'Untitled'
+      title:value || 'Başlıksız'
     })
   }
 
@@ -91,14 +91,14 @@ return (
           <IconPicker asChild onChange={onIconSelect}>
             <Button className="text-muted-foreground text-xs" variant='outline' size='sm'>
               <Smile className="w-4 h-4 mr-2"/>
-              Add icon
+              Icon ekle
             </Button>
           </IconPicker>
         )}
         {!initialData.coverImage && !preview && (
           <Button className="text-muted-foreground text-xs" variant='outline' size='sm' onClick={coverImage.onOpen}>
             <ImageIcon className="w-4 h-4 mr-2"/>
-            Add cover
+            Kapak ekle
           </Button>
         )}
       </div>

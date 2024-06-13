@@ -36,9 +36,9 @@ export function Publish ({initialData}:PublishProps) {
     .finally(() => setIsSubmitting(false))
   
     toast.promise(promise,{
-      loading:"Publishing...",
-      success:"Note published",
-      error:"Error to publish note."
+      loading:"Yayınlanıyor...",
+      success:"Not yayınlandı",
+      error:"Not yayınlama başarısız."
     })
   }
 
@@ -52,9 +52,9 @@ export function Publish ({initialData}:PublishProps) {
     .finally(() => setIsSubmitting(false))
   
     toast.promise(promise,{
-      loading:"Unpublishing...",
-      success:"Note unpublished",
-      error:"Error to unpublish note."
+      loading:"Yayından kaldırılıyor...",
+      success:"Yayından kaldırıldı.",
+      error:"Yayından kaldırma başarısız."
     })
   }
 
@@ -72,7 +72,7 @@ return (
     <Popover>
       <PopoverTrigger asChild>
         <Button size='sm' variant='ghost'>
-          Publish
+          Yayınla
           {initialData.isPublished && <Globe className="text-sky-500 w-4 h-4 ml-2"/>}
         </Button>
       </PopoverTrigger>
@@ -82,7 +82,7 @@ return (
             <div className="flex gap-x-2 items-center">
               <Globe className="text-sky-500 animate-pulse w-4 h-4"/>
               <p className="text-xs font-medium text-sky-500">
-                This note live on web
+                Bu not web'de canlı
               </p>
             </div>
             <div className="flex items-center">
@@ -97,20 +97,20 @@ return (
                </Button>
             </div>
             <Button className="w-full text-xs" size='sm' disabled={isSubmitting} onClick={onUnPublish}>
-              Unpublish
+              Yayından Kaldır
             </Button>
           </div>
         ) : (
           <div className="flex flex-col justify-center items-center">
             <Globe className="w-8 h-8 text-muted-foreground mb-2"/>
             <p className="text-sm font-medium mb-2">
-              Publish this note
+              Notu yayınla
             </p>
             <span className="text-xs text-muted-foreground mb-4">
-              Share your work with others.
+              Çalışmanızı başkalarıyla paylaşın.
             </span>
             <Button className="w-full text-xs" size='sm' disabled={isSubmitting} onClick={onPublish}>
-              Publish
+              Yayınla
             </Button>
           </div>
         )}

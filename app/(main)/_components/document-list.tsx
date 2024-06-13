@@ -60,7 +60,7 @@ return (
       <p className={cn(`hidden text-sm font-medium text-muted-foreground/80`,
       expanded && "last:block",
       level === 0 && 'hidden')} style={{paddingLeft:level ? `${(level * 12) + 25}px` : undefined}}>
-        No pages available
+        Uygun sayfa bulunamadı
       </p>
       {documents.map(document => (
         <div key={document._id}>

@@ -106,13 +106,13 @@ export function Navigation () {
   }
 
   const handleCreate = () => {
-    const promise = create({title:'Untitled'})
+    const promise = create({title:'Başlıksız'})
     .then((documentId) => router.push(`/documents/${documentId}`))
 
     toast.promise(promise,{
-      loading:"Creating new note...",
-      success:"New note created!",
-      error:"Failed to create note."
+      loading:"Yeni not oluşturuluyor...",
+      success:"Yeni not oluşuturuldu!",
+      error:"Yeni not oluşturma başarısız."
     })
   }
 
@@ -132,18 +132,18 @@ return (
         </div>
         <div>
           <UserItem/>
-          <Item label="Search" icon={Search} isSearch onClick={search.onOpen}/>
-          <Item label="Settings" icon={Settings} onClick={settings.onOpen}/>
-          <Item onClick={handleCreate} label='New page' icon={PlusCircle}/>
+          <Item label="Arama" icon={Search} isSearch onClick={search.onOpen}/>
+          <Item label="Ayarlar" icon={Settings} onClick={settings.onOpen}/>
+          <Item onClick={handleCreate} label='Yeni Sayfa' icon={PlusCircle}/>
         </div>
         <div className="mt-4">
           <DocumentList/>
           <Item onClick={handleCreate}
           icon={Plus}
-          label="Add a page"/>
+          label="Sayfa ekle"/>
           <Popover>
             <PopoverTrigger className="w-full mt-4">
-              <Item label="Trash" icon={Trash} />
+              <Item label="Çöp Kutusu" icon={Trash} />
             </PopoverTrigger>
             <PopoverContent 
             className="p-0 w-72 " 

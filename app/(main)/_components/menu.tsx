@@ -30,9 +30,9 @@ export function Menu ({documentId}:MenuProps) {
     const promise = archive({id:documentId})
 
     toast.promise(promise,{
-      loading:'Moving to trash...',
-      success:"Note Moved to trash!",
-      error:"Failed to archive note."
+      loading:'Çöpe taşı...',
+      success:"Not çöpe taşındı!",
+      error:"Not arşivleme başarısız."
     })
     router.push('/documents')
   }
@@ -48,11 +48,11 @@ export function Menu ({documentId}:MenuProps) {
       <DropdownMenuContent className="w-60" align="end" alignOffset={8} forceMount>
         <DropdownMenuItem onClick={onArchive}>
           <Trash className="w-4 h-4 mr-2"/>
-          Delete
+          Sil
         </DropdownMenuItem>
         <DropdownMenuSeparator/>
         <div className="text-xs text-muted-foreground p-2">
-          Last edited by: {user?.fullName}
+          Son düzenleyen: {user?.fullName}
         </div>
       </DropdownMenuContent>
     </DropdownMenu>

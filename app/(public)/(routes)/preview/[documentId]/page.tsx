@@ -50,7 +50,7 @@ export default function DocumentIdPage ({params}:DocumentIdPageProps) {
   }
 
   if (document === null) {
-    return <div>Not Found</div>
+    return <div>Bulunamadı</div>
 }
 
 return (

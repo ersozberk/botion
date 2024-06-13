@@ -19,7 +19,7 @@ export function Title ({initialData}:TitleProps) {
 
   const update = useMutation(api.documents.update)
 
-  const [title,setTitle] = useState(initialData.title || 'Untitled')
+  const [title,setTitle] = useState(initialData.title || 'Başlıksız')
   const [isEditing,setIsEditing] = useState(false)
 
   const enableInput = () => {
@@ -40,7 +40,7 @@ export function Title ({initialData}:TitleProps) {
 
     update({
       id:initialData._id,
-      title:event.target.value || 'Untitled'
+      title:event.target.value || 'Başlıksız'
     })
   }
 

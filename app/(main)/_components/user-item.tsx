@@ -23,7 +23,7 @@ return (
               <AvatarImage src={user?.imageUrl}/>
             </Avatar>
               <span className="text-start font-medium line-clamp-1">
-                {user?.fullName}&apos;s Jotion
+                {user?.fullName}&apos;in Botion
               </span>
           </div>
           <ChevronsLeftRight className="rotate-90 ml-2 text-muted-foreground w-4 h-4"/>
@@ -42,7 +42,7 @@ return (
             </div>
             <div className="space-y-1">
               <p className="text-sm line-clamp-1">
-                {user?.fullName}&apos;s Jotion
+                {user?.fullName}&apos;in Botion
               </p>
             </div>
           </div>
@@ -50,7 +50,7 @@ return (
         <DropdownMenuSeparator/>
         <DropdownMenuItem className="w-full cursor-pointer text-muted-foreground" asChild>
           <SignOutButton>
-            Log out
+            Çıkış yap
           </SignOutButton>
         </DropdownMenuItem>
       </DropdownMenuContent>

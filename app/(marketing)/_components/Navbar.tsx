@@ -33,7 +33,7 @@ return (
             </SignInButton>
               <SignInButton mode="modal">
               <Button  size='sm'>
-                Ücretsiz Botions Ol
+                Üye Ol
               </Button>
             </SignInButton>
           </>

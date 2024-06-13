@@ -53,7 +53,7 @@ return (
       <DialogContent>
         <DialogHeader>
           <h2 className="text-center text-lg font-semibold">
-            Cover Image
+            Kapak Resmi
           </h2>
         </DialogHeader>
         <SingleImageDropzone className="w-full outline-none"

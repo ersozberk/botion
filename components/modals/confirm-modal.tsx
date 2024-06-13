@@ -26,18 +26,18 @@ return (
       <AlertDialogContent>
         <AlertDialogHeader>
           <AlertDialogTitle>
-            Are you absolutely sure?
+            Kesinlikle emin misin?
           </AlertDialogTitle>
           <AlertDialogDescription>
-            This action cannot be undone.
+            Bu eylem geri alınamaz.
           </AlertDialogDescription>
         </AlertDialogHeader>
         <AlertDialogFooter>
           <AlertDialogCancel onClick={e => e.stopPropagation()}>
-            Cancel
+            İptal
           </AlertDialogCancel>
           <AlertDialogAction onClick={handleConfirm}>
-            Confirm
+            Onay
           </AlertDialogAction>
         </AlertDialogFooter>
       </AlertDialogContent>
