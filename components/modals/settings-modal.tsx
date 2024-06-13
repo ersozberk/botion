@@ -21,7 +21,7 @@ return (
               Görünüm
             </Label>
             <span className="text-[0.8rem] text-muted-foreground">
-              Botion'un cihazınızda nasıl görüneceğini özelleştirin
+              Botion&apos;un cihazınızda nasıl görüneceğini özelleştirin
             </span>
           </div>
           <ModeToggle/>

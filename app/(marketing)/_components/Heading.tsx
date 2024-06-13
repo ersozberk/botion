@@ -35,7 +35,7 @@ return (
         {!isAuthenticated && !isLoading && (
           <SignInButton mode='modal'>
             <Button>
-               Botion'a Ücretsiz Katılın
+               Botion&apos;a Ücretsiz Katılın
               <ArrowRight className="w-4 h-4 ml-2"/>
             </Button>
           </SignInButton>
