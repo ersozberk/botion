@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Botion Nedir?
 
-## Getting Started
+🚀 Heyecan Verici Haberler! 🚀
+Antonio'nun harika tam yığın Notion klonu eğitiminden esinlenerek geliştirdiğim yeni üretkenlik web sitesi Botion'u tanıtmaktan mutluluk duyuyorum!
+Kullandığım Teknolojiler
+- Convex: Gerçek zamanlı veritabanı için kullandım. 🔗
+- Clerk: Kullanıcı kimlik doğrulama süreçlerini yönetmek için entegre ettim. 🔐
+- Edgestore: Dosya yükleme, silme ve değiştirme işlemlerinde kullanıldı. 📁
+- Trunk: Kod kalite kontrolü ve doğrulama süreçlerinde yardımcı oldu. ✅
+Proje Geliştirme Süreci
 
-First, run the development server:
+1. Çevre Kurulumu ve Dizim: Geliştirme ortamını oluşturmak ve gerekli dosya yapısını kurmak için ilk adımları attım. ⚙️
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+2. Ana Sayfa: Kullanıcıları karşılayacak çekici ve işlevsel bir ana sayfa tasarladım. 🏠
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Kimlik Doğrulama ve Veritabanı: Clerk ve Convex'i kullanarak güvenli bir kimlik doğrulama ve gerçek zamanlı veritabanı entegrasyonu sağladım. 🔒
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+4. Kenar Çubuğu: Kullanıcıların belgelerine kolayca erişebileceği bir kenar çubuğu oluşturuldu. 📚
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+5. Kullanıcı Ayarları: Kullanıcıların hesaplarını ve tercihlerini yönetebilecekleri bir ayar paneli entegre ettim. ⚙️
 
-## Learn More
+6. Belgeler ve Arşiv: Belgelerin listelenmesi, arşivlenmesi ve geri dönüşüm kutusu özelliklerini ekledim. 🗂️
 
-To learn more about Next.js, take a look at the following resources:
+7. Arama Fonksiyonu: Kullanıcıların belgeleri arasında hızlı ve etkili bir şekilde arama yapabilmelerini sağladım. 🔍
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+8. Yayınlama Özelliği: Kullanıcıların notlarını web üzerinde yayınlayabilecekleri bir önizleme ve yayınlama işlevi ekledim. 🌐
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+9. Dosya Yükleme ve Yönetimi: Kullanıcıların belgelerine kapak resimleri ekleyebilecekleri, dosya yükleyip, silebilecekleri ve değiştirebilecekleri özellikler geliştirildi. 📤📥
 
-## Deploy on Vercel
+10. Tam Mobil Uyumluluk: Tüm özelliklerin mobil cihazlarda da sorunsuz çalışmasını sağladım. 📱
+🎯 İş Bulma Sürecinde Gerçek Zamanlı Tam Yığın Proje Geliştirmenin Önemi
+Gerçek zamanlı tam yığın projeler geliştirmek, yazılım geliştirme dünyasında çok değerli bir beceridir. Bu tür projeler, kullanıcıların anında geri bildirim almasını ve verilerin anında güncellenmesini sağlar. Bu beceriler, iş bulma sürecimde benim için büyük bir avantaj oldu çünkü işverenler, güncel teknolojileri ve gerçek dünya sorunlarını çözme yeteneğini takdir ediyor.
+Kaynak Kodu ve Katkılar
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Bu projeyi açık kaynaklı olarak geliştirdim ve kodları GitHub hesabımda paylaştım. Ayrıca portfolyo sitem üzerinden de projeye ulaşabilirsiniz. Proje ile ilgili geri bildirimleriniz ve katkılarınız benim için çok değerli. Geliştirmelere katılmaktan çekinmeyin!
+- GitHub: [GitHub Hesabım](Github) 🌐
+- Portfolyo Sitem: [Portfolyo](Website) 💼
+Botion, kullanıcıların çalışmalarını basit, hızlı ve özelleştirilebilir bir şekilde yönetmelerine olanak tanıyan güçlü bir araçtır. Hem açık hem de koyu tema seçenekleri, kullanıcı kimlik doğrulama, ve notları yayınlama gibi özelliklerle doludur.
+🔗 Botion'u inceleyin ve notlarınızı kolayca yönetmeye başlayın!
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+#Üretkenlik #WebGeliştirme #NotionKlonu #Botion #TamYığınGeliştirme #TeknolojiLansmanı #AçıkKaynak #GitHub #GerçekZamanlıGeliştirme
