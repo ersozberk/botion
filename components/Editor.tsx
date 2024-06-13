@@ -14,7 +14,7 @@ interface EditorProps {
 	editable?: boolean;
 }
 
-const Editor = ({
+const editor = ({
 	onChange,
 	initialContent,
 	editable
@@ -49,4 +49,4 @@ const Editor = ({
 	);
 };
 
-export default Editor;
+export default editor;
