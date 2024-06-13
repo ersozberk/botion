@@ -1,5 +1,5 @@
 Botion Nedir?
-
+![Proje Logosu](https://files.edgestore.dev/q4d15jkvp8pe8l8z/publicFiles/_public/80bf782d-c741-435a-b085-cd4c89248499.png)
 🚀 Heyecan Verici Haberler! 🚀
 Antonio'nun harika tam yığın Notion klonu eğitiminden esinlenerek geliştirdiğim yeni üretkenlik web sitesi Botion'u tanıtmaktan mutluluk duyuyorum!
 Kullandığım Teknolojiler
