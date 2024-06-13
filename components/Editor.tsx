@@ -1,12 +1,12 @@
 'use client';
 
-import type { BlockNoteEditor, PartialBlock } from '@blocknote/core';
-import { useCreateBlockNote } from '@blocknote/react';
+import "@blocknote/core/fonts/inter.css";
+import { useCreateBlockNote } from "@blocknote/react";
 import { BlockNoteView } from "@blocknote/mantine";
-import '@blocknote/react/style.css';
+import "@blocknote/mantine/style.css";
 import { useTheme } from 'next-themes';
-
 import { useEdgeStore } from '@/lib/edgestore';
+import { BlockNoteEditor, PartialBlock } from "@blocknote/core";
 
 interface EditorProps {
 	onChange: (value: string) => void;
