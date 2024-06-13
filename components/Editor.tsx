@@ -1,10 +1,9 @@
 'use client';
 
-import { locales } from "@blocknote/core";
 import "@blocknote/core/fonts/inter.css";
+import { useCreateBlockNote } from "@blocknote/react";
 import { BlockNoteView } from "@blocknote/mantine";
 import "@blocknote/mantine/style.css";
-import { useCreateBlockNote } from "@blocknote/react";
 import { useTheme } from 'next-themes';
 import { useEdgeStore } from '@/lib/edgestore';
 import { BlockNoteEditor, PartialBlock } from "@blocknote/core";
@@ -14,14 +13,6 @@ interface EditorProps {
 	initialContent?: string;
 	editable?: boolean;
 }
-
-// Define Turkish translations
-locales.tr = {
-    addBlock: "Blok Ekle",
-    deleteBlock: "Bloğu Sil",
-    uploadFile: "Dosya Yükle",
-    // Add other translation keys and values here
-};
 
 const Editor = ({
 	onChange,
@@ -37,13 +28,11 @@ const Editor = ({
 		return response.url;
 	};
 
-	// Creates a new editor instance with Turkish localization.
 	const editor: BlockNoteEditor = useCreateBlockNote({
 		initialContent: initialContent
 			? (JSON.parse(initialContent) as PartialBlock[])
 			: undefined,
-		uploadFile: handleUpload,
-		dictionary: locales.tr, // Using the Turkish dictionary
+		uploadFile: handleUpload
 	});
 
 	return (
