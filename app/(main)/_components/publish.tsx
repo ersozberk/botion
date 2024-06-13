@@ -82,7 +82,7 @@ return (
             <div className="flex gap-x-2 items-center">
               <Globe className="text-sky-500 animate-pulse w-4 h-4"/>
               <p className="text-xs font-medium text-sky-500">
-                Bu not web'de canlı
+                Bu not şimdi canlı
               </p>
             </div>
             <div className="flex items-center">
